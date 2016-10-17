@@ -1,0 +1,661 @@
+
+body {
+    background: linear-gradient(to right, rgb(250, 230, 230), #e5e5e5);
+    color: #735749;
+    font-family: 'Laila' ,sans-serif;
+    font-size: 18px;
+    position:relative;
+}
+
+h1 {
+    font-family: "Days One" ,sans-serif;
+    font-size: 60px;
+    color:#f4f4f4;
+    margin-bottom: 0px;
+}
+
+
+h2 {
+    font-family: "Baloo Tamma" ,sans-serif;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: "Baloo Tamma" ,sans-serif;
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+h5 {
+    font-size: 25px;
+}
+
+h6 {
+    font-size: 22px;
+}
+
+
+ul {
+    list-style: none;
+}
+/**************NAVBAR*****************/
+
+nav {
+    color: #f4f4f4;
+}
+
+nav li a {
+    font-family: "Baloo Tamma" ,sans-serif;
+    color: #f4f4f4;
+    animation-name: navItemMoveBack;
+    animation-duration: 0.5s;
+}
+@keyframes navItemMoveBack {
+    from {
+        color: #4b87a0;
+    }
+    to {
+        color: #f4f4f4
+    }
+}
+nav li a:hover {
+    color: #4b87a0;
+    animation-name: navItemMove;
+    animation-duration: 0.5s;
+}
+.nav li a:focus, .nav li a:hover  {
+background-color: transparent;
+background-image: none
+}
+@keyframes navItemMove {
+    from {
+        color: #f4f4f4;
+    }
+    to {
+        color: #4b87a0
+    }
+}
+.navbar-css {
+    display: block;
+    background: linear-gradient(to right, #735749, #8f6f5b);
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 5px rgba(30, 20, 20, 0.5);
+    position: fixed;
+}
+.navbar-css ul {
+    font-size: 2em;
+    text-align: center;
+}
+.navbar-css ul a {
+    margin: 10px;
+}
+.nav_grande {
+    text-align: center;
+    background: linear-gradient(to right, #735749, #8f6f5b);
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 0px 10px 5px rgba(30, 20, 20, 0.5);
+    position: fixed;
+}
+
+.nav_grande ul a {
+    margin-left: 5px;
+    font-size: 1.0em;
+}
+.nav-sticky {
+    position: fixed;
+    z-index: 50;
+}
+
+/***************HEADER*******************/
+
+header {
+    background-image: url(../img/background/Background_Michel_1.JPG);
+    background-size: cover;
+    background-position: bottom;
+    height:440px;
+    box-shadow: inset 0px 10px 50px rgba(80, 57, 53, 0.3);
+    box-shadow: 0px 0px 10px 5px rgba(80, 57, 53, 0.2);
+
+}
+#logos {
+    /*Le fond spécials pourra être remis là*/
+    background-color: rgba(80, 50, 50, 0.6);
+    height: 300px;
+    width: 100%;
+}
+
+#titre_page{
+    padding-top: 70px;
+    text-align: center;
+}
+header h2 {
+    color:#f4f4f4;
+}
+/*RAISEAU SOCIAUX*/
+
+.sociaux_haut {
+    display: none;
+    position: relative;
+    float: right;
+    top: 90px;
+    right: 40px;
+}
+.sociaux_haut a {
+    color: #f4f4f4;
+    margin: 15px;
+}
+
+/**********************************************
+                  CORPS_DE_TEXTE
+***********************************************/
+
+#container {
+    margin:3em;
+}
+
+
+/*==========================================================================
+ACCEUIL  page for michelcarton's website
+========================================================================== */
+.journal {
+    margin:100px 0px;
+}
+
+.journal .titre_section{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 8px 0;
+    padding: 0 0 10px;
+    border-bottom: 3px solid #735749;
+}
+
+.journal .photoProfile{
+  width:50px;
+  height:50px;
+  border-radius: 40px;
+  background-color: red;
+}
+
+.journal .date_du_post{
+    display:flex;
+    justify-content: space-between;
+}
+
+.journal .journal_corps figure {
+    margin: 20px auto;
+    width:450px;
+    height:320px;
+}
+
+
+
+
+/*==========================================================================
+GALLERIE  page for michelcarton's website
+========================================================================== */
+
+#main{
+    margin-top:40px;
+    }
+
+#main h3{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+#galleryPhoto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    padding-bottom:20px;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+#galleryPhoto li{
+    list-style: none;
+    width:200px;
+    margin: 8px 10px;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+#overlay {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    display:none;
+    z-index: 100
+
+}
+
+#overlay img {
+ margin-top: 8%;
+}
+
+#overlay h5 {
+    margin-top: 20px;
+    font-size: 40px;
+    color:white;
+}
+
+/*==========================================================================
+INSCRIPTION  page for michelcarton's website
+========================================================================== */
+.flex_inscription{
+    width:90%;
+    margin: auto;
+}
+
+form {
+    width:460px;
+    margin-bottom: 8em;
+}
+
+form .formulaire_inscription input  {
+    margin: 0 auto 10px;
+    width:450px;
+    height:40px;
+}
+
+.checkboxes{
+    margin-top:30px;
+    padding-top: 20px;
+}
+
+.checkboxes input{
+    margin: 10px;
+}
+
+button{
+    margin:20px auto;
+    padding:12px 20px;
+    font-size: 18px;
+    background: none;
+    border: 4px solid #735749;
+    border-radius: 7px;
+}
+
+button:hover{
+    font-size: 18px;
+    color:#f4f4f4;
+    background-color: #735749;
+    border: 4px solid #735749;
+}
+
+.atelier_inscription {
+    margin: 5em 0;
+    border: 2px solid #735749;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+
+/*==========================================================================
+CONTACT  page for michelcarton's website
+========================================================================== */
+
+.flex_contact{
+    display:flex;
+    flex-wrap: wrap;
+    width:450px;
+    margin: 0 auto 40px;
+}
+
+
+.article_1_contact{
+    width:100%;
+    margin: 0px 0% 0;
+}
+
+.article_1_contact h4{
+    margin-top: 40px;
+}
+.article_1_contact p{
+    margin-top: 40px;
+}
+
+.formulaire_contact{
+    width:100%;
+    margin: 50px 0% 0;
+}
+
+.formulaire_contact input{
+    height:40px;
+    width:100%;
+}
+
+
+
+
+
+/**********************************************
+                     FOOTER
+**********************************************/
+
+
+
+footer{
+    background: linear-gradient(to bottom,rgba(210, 180, 180, 0.5), rgba(240, 190, 190, 0.5));
+    padding:20px;
+    bottom:1.5em;
+    width:100%;
+    color:#735749;
+    box-shadow: inset 0px 5px 30px rgba(90, 50, 50, 0.2);
+}
+
+.article_footer_contact {
+    margin: 30px 5%;
+    width: 90%;
+}
+
+.article_footer_apropos {
+    font-size: 14px;
+    margin: 30px 5%;
+    width: 90%;
+}
+.article_footer_apropos p {
+    margin: 30px 20px;
+}
+.article_footer_prendrecontact {
+    margin: 40px 5% 90px;
+    width: 90%;
+}
+.sociaux_bas {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.sociaux_bas {
+    margin-left: -20px;
+}
+.sociaux_bas i {
+    color: #735749;
+    animation-name: sociauxItemMoveBack;
+    animation-duration: 0.3s;
+}
+
+@keyframes sociauxMoveBack {
+    from {
+        color: #4b87a0;
+    }
+    to {
+        color: #735749;
+    }
+}
+
+.sociaux_bas i:hover{
+    color: #4b87a0;
+    animation-name: sociauxItemMove;
+    animation-duration: 0.3s;
+}
+
+@keyframes sociauxItemMove {
+    from {
+        color: #735749;
+    }
+    to {
+        color: #4b87a0;
+    }
+}
+
+
+footer h3 {
+    padding: 10px 0;
+    margin: 0 0 20px;
+    border-bottom: 3px solid;
+    width: 300px;
+}
+aside {
+    text-align: center;
+    bottom: 0;
+}
+.article_footer_contact aside {
+    text-align: left;
+}
+
+.article_footer_contact aside {
+    margin: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+
+
+@media only screen and (min-width: 480px) {
+
+
+/*********NAVBAR*********/
+
+
+
+/*********HEADER*********/
+
+
+/*********CORPS DE TEXTE*********/
+
+#container {
+    margin:3em 4em;
+}
+
+
+/*********PAGE JOURNAL*********/
+
+    .journal {
+        margin:100px 10px;
+    }
+
+
+
+
+/*********FOOTER*********/
+
+
+
+}
+@media only screen and (min-width: 768px) {
+
+    #titre_page{
+        text-align: left;
+        margin-left: 15%;
+    }
+
+    h1{
+
+    }
+
+    h1{
+
+    }
+
+
+/*********HEADER*********/
+
+
+    .title {
+        float: left;
+    }
+
+
+
+    .main article {
+        float: left;
+        width: 57%;
+    }
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+    .sociaux_haut {
+        display: block;
+        position:absolute;
+    }
+
+    .navbar-css {
+        display: none;
+    }
+
+    .nav_grande {
+        text-align: right;
+        font-size: 1.3em;
+    }
+
+    .nav_grande ul{
+        margin-top: 15px;
+    }
+    /*journal*/
+
+/*********CORPS DE TEXTE*********/
+
+
+#container {
+    margin:3em 10%;
+}
+
+
+
+/*journal*/
+
+    .journal_corps{
+        display: flex;
+    }
+    .journal figure {
+        width: 50%;
+    }
+    .journal_corps article {
+        padding: 20px;
+        width: 50%;
+    }
+    /*********FOOTER*********/
+
+    .articles_footer {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10%;
+    }
+    .article_footer_apropos p {
+        margin: 40px 0;
+    }
+    .article_footer_contact {
+        width: 50%;
+    }
+    .article_footer_apropos {
+        width: 30%;
+    }
+
+
+    .article_footer_prendrecontact{
+        width:100%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .article_footer_prendrecontact .sociaux_bas{
+        margin-top: 20px;
+    }
+
+    footer h3 {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+
+}
+
+
+/***************************
+      PAGE INSCRIPTION
+***************************/
+
+
+.flex_inscription{
+    width:750px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.formulaire_inscription_container{
+    margin: 0 2.5%;
+    width:45%;
+}
+.description_inscription & .atelier_inscription{
+    width:40%;
+}
+
+
+
+
+@media only screen and (min-width: 1140px) {
+    /* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px;
+        /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+    /***************HEADER****************/
+
+
+
+    /*********CORPS DE TEXTE*********/
+
+    #container {
+        margin:3em 15%;
+    }
+
+
+
+    /***************FOOTER****************/
+
+    .articles_footer {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 10%;
+    }
+    .article_footer_apropos p {
+        margin: 40px 0;
+    }
+    .article_footer_contact {
+        width: 30%;
+    }
+    .article_footer_apropos {
+        width: 30%;
+    }
+
+    .article_footer_prendrecontact{
+        width:30%;
+        margin-top: 29px;
+        margin-bottom: 0px;
+    }
+
+    .article_footer_prendrecontact .sociaux_bas{
+        margin-top: 35px;
+        margin-bottom: 0px;
+
+    }
+}
